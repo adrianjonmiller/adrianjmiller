@@ -1,0 +1,21 @@
+{
+  "name": "Adrian Miller Design",
+  "version": "2.0.0",
+  "authors": [
+    "Adrian Miller <adrianjonmiller@gmail.com>"
+  ],
+  "description": "Portfolio site",
+  "license": "MIT",
+  "homepage": "adrianmillerdesign.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "starkers": "https://github.com/viewportindustries/starkers"
+  }
+}

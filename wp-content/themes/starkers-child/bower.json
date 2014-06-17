@@ -1,0 +1,26 @@
+{
+  "name": "Adrian Miller Design",
+  "version": "0.0.0",
+  "authors": [
+    "Adrian Miller <adrianjonmiller@gmail.com>"
+  ],
+  "description": "AJM Design Theme",
+  "license": "MIT",
+  "homepage": "adrianmillerdesign.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "~3.0.1",
+    "ionicons": "~1.4.1",
+    "jsbehave": "https://github.com/adrianjonmiller/jsbehave.git",
+    "dont_over_think_it": "https://github.com/adrianjonmiller/dont_over_think_it.git#~0.0.1",
+    "animate-css": "~3.1.1",
+    "bootstrap": "~3.1.1"
+  }
+}
