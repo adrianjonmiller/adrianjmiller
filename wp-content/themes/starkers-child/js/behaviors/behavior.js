@@ -70,4 +70,9 @@ DLN.Behaviors.pagesize = function(container) {
 	// });
 }
 
+DLN.Behaviors.imageloader = function(container) {
+	console.log("successs");
+	container.imageloader();
+}
+
 						

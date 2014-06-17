@@ -9,11 +9,12 @@
  * @since 		Starkers 4.0
  */
 ?>
+
 <div class="grid">
 	<div class="col-2-3">
 		<article class="module">
 			<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-				<div class="project-gallery"><?php the_content(); ?></div>
+				<div class="project-gallery" data-behavior="imageloader"><?php the_content(); ?></div>
 		</article>
 	</div>
 	<div class="col-1-3">
@@ -24,3 +25,4 @@
 	</div>
 	<?php endwhile; ?>
 </div>
+<img id="ajaxloader" src="<?php echo get_stylesheet_directory_uri() ?>/img/ajax-loader.gif" />

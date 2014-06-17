@@ -11,14 +11,17 @@ function starkers_script_enqueuer() {
 	wp_register_script( 'view', get_stylesheet_directory_uri().'/js/plugins/view.js', array( 'jquery' ) );
 	wp_enqueue_script( 'view' );
 
-	wp_register_script( 'behaviors', get_stylesheet_directory_uri().'/js/behaviors/behavior.js', array( 'jquery' ) );
-	wp_enqueue_script( 'behaviors' );
-
 	wp_register_script( 'pageLoader', get_stylesheet_directory_uri().'/js/plugins/jquery.pageLoader.min.js', array( 'jquery' ) );
 	wp_enqueue_script( 'pageLoader' );
 
 	wp_register_script( 'pagesize', get_stylesheet_directory_uri().'/js/plugins/jquery.pagesize.js', array( 'jquery' ) );
 	wp_enqueue_script( 'pagesize' );
+
+	wp_register_script( 'imageloader', get_stylesheet_directory_uri().'/js/plugins/jquery.imageloader.js', array( 'jquery' ) );
+	wp_enqueue_script( 'imageloader' );
+
+	wp_register_script( 'behaviors', get_stylesheet_directory_uri().'/js/behaviors/behavior.js', array( 'jquery' ) );
+	wp_enqueue_script( 'behaviors' );
 
 	wp_register_style( 'normalize-css', get_stylesheet_directory_uri().'/bower_components/normalize-css/normalize.css', '', '', 'screen' );
 	wp_enqueue_style( 'normalize-css' );

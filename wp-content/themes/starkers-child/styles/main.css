@@ -87,6 +87,8 @@ p {
   z-index: 1000;
   background: white; }
   #header > .social-media-link {
+    text-align: center;
+    line-height: 24px;
     color: #354b5e;
     float: right;
     margin-left: 9px;
@@ -245,6 +247,15 @@ p {
   padding: 9px;
   padding-top: 45px; }
 
+.gallery {
+  position: relative;
+  min-height: 100%; }
+
+#ajaxloader {
+  position: absolute;
+  top: 50%;
+  right: 66.66666%; }
+
 .thumbnail {
   float: left;
   position: relative;
@@ -286,6 +297,9 @@ p {
   .back-button:hover {
     background-color: #354b5e;
     color: white; }
+
+.project-gallery img {
+  width: 100%; }
 
 #design .back-button {
   right: 9px; }
@@ -341,13 +355,6 @@ p {
     #loader > .close:hover {
       background: gray;
       color: white; }
-
-.project-gallery {
-  position: relative;
-  top: 0;
-  left: 0; }
-  .project-gallery img {
-    width: 100%; }
 
 .project-title {
   margin-top: 18px; }
