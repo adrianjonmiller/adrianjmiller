@@ -46,21 +46,24 @@ p {
 	right: 0;
 	width: 100%;
 	padding: $pad/2;
-	z-index: 100;
-	background: #fff;
+	z-index: 1000;
+	background: $color-white;
 
 	// @extend %clearfix;
 
 	> .social-media-link {
-		color: gray;
+		color: $color-blue_gray;
 		float: right;
-		margin-left: $pad;
-		font-size: 20px;
-		color: gray;
+		margin-left: $pad/2;
+		font-size: 16px;
+		width: 24px;
+		height: 24px;
+		border-radius: 12px;
 		@include transition(color .5s, background .5s);
 
 		&:hover {
-			color: #fff;
+			color: $color-white;
+			background-color: $color-blue_gray;
 		}
 	}
 	
@@ -91,7 +94,7 @@ p {
 
 	> a {
 		text-decoration: none;
-		color: gray;
+		color: $color-blue_gray;
 		font-size: 24px;
 	}
 
@@ -107,7 +110,7 @@ p {
 			font-size: 20px;
 			opacity: 0;
 			text-align: center;
-			color: gray;
+			color: $color-blue_gray;
 			@include transition(opacity .5s, padding-right .5s);
 		}
 		&:hover:before {
@@ -166,7 +169,7 @@ p {
 	height: 100%;
 	@include transition(left 1s);
 	.slash {
-		color: #ff0000;
+		color: $color-red;
 		font-size: 60px;
 		font-weight: 100;
 		position: absolute;
@@ -205,9 +208,29 @@ p {
 
 #logo {
 	font-size: 12px;
+	line-height: 12px;
 	text-transform: uppercase;
 	letter-spacing: .1em;
 	float: left;
+}
+
+.logo {
+	height: 18px;
+	display: inline;
+	margin-right: $pad/2;
+	float: left;
+}
+
+.title {
+	line-height: 18px;
+}
+
+.page-name:before {
+	content: "/";
+	display: inline-block;
+	color: $color-red;
+	width: 1em;
+	text-align: center;
 }
 
 .page {
@@ -226,6 +249,7 @@ p {
 	position: relative;
 	margin-right: $pad;
 	margin-bottom: $pad;
+
 
 	img {
     filter: url(filters/filters.svg#grayscale); /* Firefox 3.5+ */
@@ -253,15 +277,15 @@ p {
 	width: 30px;
 	height: 30px;
 	line-height: 30px;
-	color: gray;
+	color: $color-blue_gray;
 	border-radius: 15px;
 	background-color: white;
-	border: solid thin gray;
+	border: solid thin $color-blue_gray;
 	@include transition(color .5s, background-color .5s);
 
 	&:hover {
-		background-color: gray;
-		color: #fff;
+		background-color: $color-blue_gray;
+		color: $color-white;
 	}
 
 }
@@ -289,12 +313,6 @@ p {
 	}
 }
 
-.page-name:before {
-	content: "/";
-	display: inline-block;
-	color: #ff0000;
-}
-
 #loader {
 	position: fixed;
 	@media screen and (max-width: 480px) {
@@ -311,7 +329,7 @@ p {
 		left: $pad;
 	}
 
-	background: #fff;
+	background: $color-white;
 	z-index: 1000;
 	overflow-y: scroll;
 	padding: $pad;
@@ -336,7 +354,7 @@ p {
 
 		&:hover {
 			background: gray;
-			color: #fff;
+			color: $color-white;
 			// @include transform(rotate(360deg));
 		}
 	}

@@ -1,7 +1,7 @@
 <?php
 
 wp_deregister_script('jquery');
-wp_register_script('jquery', ("//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"), false, '1.9.0', true);
+wp_register_script('jquery', ("//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"), false, '1.9.0', true);
 wp_enqueue_script('jquery');
 	
 function starkers_script_enqueuer() {
