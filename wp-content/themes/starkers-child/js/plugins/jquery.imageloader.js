@@ -32,7 +32,7 @@
                 });
 
                 $this.on('load', function(){
-                  $this.fadeIn(5000);
+                  $this.fadeIn();
                   $('#ajaxloader').hide();
                 });
             });
