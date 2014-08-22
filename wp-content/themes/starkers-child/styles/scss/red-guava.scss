@@ -1,0 +1,57 @@
+@import "bourbon";
+@import "typography";
+
+$color-red: #f15c42;
+$color-orange: #fbaf3c;
+$color-green: #6daf7e;
+$color-navy: #1c4f63;
+$color-blue_green: #068587;
+
+$pad: 1rem;
+
+$julius-sans: 'Julius Sans One', sans-serif;
+$roboto-cond: 'Roboto Condensed', sans-serif;
+$roboto-slab: 'Roboto Slab', serif;
+$tangerine: 'Tangerine', cursive;
+$josefin: 'Josefin Sans', sans-serif;
+
+%clearfix:after {
+	content: "";
+  display: table;
+  clear: both;
+}
+
+
+body {
+	padding: $pad;
+	margin: 0;
+	background: url(../img/red-guava/bg.png);
+}
+
+h1, h2, h3 ,h4 ,h5 {
+	margin: 0;
+	padding: 0;
+}
+
+h4 {
+	padding: 6px $pad;
+	background-color: $color-red;
+	margin-bottom: $pad/2;
+	font-family: $roboto-cond;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 18pt;
+}
+
+.module {
+	padding-bottom: $pad;
+
+	> p {
+		background-color: $color-blue_green;
+		padding: $pad;
+		color: #fff;
+		margin: 0;
+		font-family: $roboto-cond;
+		font-size: 16pt;
+	}
+}

@@ -14,6 +14,12 @@ function starkers_script_enqueuer() {
 	wp_register_script( 'pageLoader', get_stylesheet_directory_uri().'/js/plugins/jquery.pageLoader.min.js', array( 'jquery' ) );
 	wp_enqueue_script( 'pageLoader' );
 
+	wp_register_script( 'inview', get_stylesheet_directory_uri().'/bower_components/jquery.inview/jquery.inview.min.js', array( 'jquery' ) );
+	wp_enqueue_script( 'inview' );
+
+	wp_register_script( 'animate-css', get_stylesheet_directory_uri().'/js/plugins/jquery.animate.min.js', array( 'jquery' ) );
+	wp_enqueue_script( 'animate-css' );
+
 	wp_register_script( 'pagesize', get_stylesheet_directory_uri().'/js/plugins/jquery.pagesize.js', array( 'jquery' ) );
 	wp_enqueue_script( 'pagesize' );
 

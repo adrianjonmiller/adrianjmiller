@@ -6,6 +6,7 @@
 @import "vars";
 @import "animations";
 @import "extends";
+@import "typography";
 
 * {
 	font-family: 'Lato', sans-serif;
@@ -39,6 +40,9 @@ p {
 }
 
 .grid { margin: 0; }
+
+.this-is-wrong {
+}
 
 #header {
 	position: fixed;
@@ -303,13 +307,15 @@ p {
 .project-gallery {
 	img {
 		width: 100%;
+		box-shadow: 0 0 5px rgba(black, 0.6);
+		margin-bottom: $pad;
 	}
 }
 
 
 
 #design .back-button {
-	right: $pad/2;
+	right: 3px;
 }
 
 #code .page-title {
@@ -317,7 +323,7 @@ p {
 }
 
 #code .back-button {
-	left: $pad/2;
+	left: 3px;
 }
 
 .page-title {
@@ -378,8 +384,70 @@ p {
 	}
 }
 
-
-
 .project-title {
 	margin-top: $pad;
+}
+
+
+#mask {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(black, 0.6);
+}
+
+.image-mask {
+	position: relative;
+	display: block;
+	padding: 4%;
+	padding-bottom: 25%;
+
+	&:after {
+		content: "";
+		background: url(../img/imac.png) no-repeat;
+		width: 100%;
+		height: 100%;
+		background-size: 100% auto;
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+	}
+}
+
+.browser-frame {
+	padding-top: 38px;
+	position: relative;
+	display: block;
+	border-radius: 0 0 4px 4px;
+	overflow: hidden;
+	box-shadow: 0px 0px 5px rgba(black, 0.6);
+	margin-bottom: $pad;
+
+	&:before {
+		content: "";
+		display: block;
+		height: 38px;
+		top: 0;
+		left: 0;
+		position: absolute;
+		width: 100%;
+		background: url(../img/browser-frame-left.png) no-repeat;
+	}
+	&:after {
+		content: "";
+		display: block;
+		height: 38px;
+		top: 0;
+		right: 0;
+		position: absolute;
+		width: 261px;
+		background: url(../img/browser-frame-right.png) no-repeat;
+	}
+	> img {
+		margin: 0;
+		display: block;
+	}
 }

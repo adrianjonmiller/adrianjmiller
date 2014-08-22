@@ -24,6 +24,10 @@ DLN.Behaviors.view = function(container) {
 	});
 }
 
+DLN.Behaviors.animate_css = function(container) {
+	container.cssAnimate();
+}
+
 
 DLN.Behaviors.design = function(container) {
 	container.view({
@@ -71,8 +75,46 @@ DLN.Behaviors.pagesize = function(container) {
 }
 
 DLN.Behaviors.imageloader = function(container) {
-	console.log("successs");
 	container.imageloader();
+}
+
+
+var i =0;
+$items = $('[data-animation]');
+
+function animate(item) {
+	viewCheck(item);
+	$($items.get(item)).one('inview', function(e, inView){
+		$this = $(this);
+		var animation = $(this).attr('data-animation');
+		if(animation == 'break') {
+			i = item+1;
+		} else {
+			$this.addClass('animated ' + animation);
+			$this.css('visibility', 'visible');
+			DLN.LoadBehavior($this);
+			$this.on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){ 
+				if(item <= $items.length) {
+					item++;
+					animate(item);
+				}
+			});
+		}
+	});
+}
+
+function viewCheck(item) {
+	$current = $($items.get(item));
+	$next = $($items.get(item++));
+	$current.show();
+	$next.show();
+	if(item <= $items.length) {
+		if($next.offset().top+$next.height() > $(window).height()+$(window).scrollTop()) {
+			$('html, body').animate({
+				scrollTop: $next.offset().top - 30
+			});
+		}
+	}
 }
 
 						

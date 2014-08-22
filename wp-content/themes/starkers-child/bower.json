@@ -21,6 +21,10 @@
     "jsbehave": "https://github.com/adrianjonmiller/jsbehave.git",
     "dont_over_think_it": "https://github.com/adrianjonmiller/dont_over_think_it.git#~0.0.1",
     "animate-css": "~3.1.1",
-    "bootstrap": "~3.1.1"
+    "bootstrap": "~3.1.1",
+    "jquery.inview": "~1.0.0",
+    "animate.css": "~3.2.0",
+    "flowtype": "*",
+    "jquery.stellar": "~0.6.2"
   }
 }

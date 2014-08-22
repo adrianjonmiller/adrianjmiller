@@ -27,9 +27,7 @@
         for(var i=0;i<plugin.settings.pages.length;i++) {
           urls.push(plugin.settings.root+'/'+plugin.settings.pages[i]);
         }
-
-        console.log(urls);
-
+        
         $element.hide();
         
         for(var i=0;i<urls.length;i++) {
