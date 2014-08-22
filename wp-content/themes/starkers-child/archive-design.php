@@ -20,7 +20,7 @@
 	<div class="col-1">
 		<div class="gallery" data-behavior="animate_css">
 		<?php while ( have_posts() ) : the_post(); ?>
-			<div class="thumbnail">
+			<div class="thumbnail animate-fast">
 				<article data-animation="fadeIn">
 					<a href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark" data-behavior="pageloader"><?php echo get_the_post_thumbnail(); ?></a>
 				</article>
