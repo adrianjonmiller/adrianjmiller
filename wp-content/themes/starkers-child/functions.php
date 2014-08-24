@@ -94,6 +94,7 @@ function the_slug($echo=true){
 				'public' => true,
 				'has_archive' => true,
 				'rewrite' => array('slug' => 'design'),
+				'taxonomies' => array('post_tag')
 			)
 		);
 		register_post_type( 'code',
@@ -105,6 +106,7 @@ function the_slug($echo=true){
 				'public' => true,
 				'has_archive' => true,
 				'rewrite' => array('slug' => 'code'),
+
 			)
 		);
 	}

@@ -22,6 +22,18 @@
 			<h2 class="project-title"><?php the_title(); ?></h2>
 			<?php the_excerpt(); ?> 
 		</article>
+		<aritcle class="module tags">
+			<ul class="tags">
+				<?php
+				$posttags = get_the_tags();
+				if ($posttags) {
+				  foreach($posttags as $tag) {
+				    echo '<li class="tag">'.$tag->name . '</li>'; 
+				  }
+				}
+				?>
+			</ul>
+		</div>
 	</div>
 	<?php endwhile; ?>
 </div>

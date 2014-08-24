@@ -103,14 +103,14 @@ p {
   background: white; }
   #header > .social-media-link {
     text-align: center;
-    line-height: 24px;
+    line-height: 32px;
     color: #354b5e;
     float: right;
     margin-left: 9px;
-    font-size: 16px;
-    width: 24px;
-    height: 24px;
-    border-radius: 12px;
+    font-size: 18px;
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
     -webkit-transition: color 0.5s, background 0.5s;
     -moz-transition: color 0.5s, background 0.5s;
     transition: color 0.5s, background 0.5s; }
@@ -296,19 +296,18 @@ p {
 
 .back-button {
   position: absolute;
-  font-size: 20px;
+  font-size: 24px;
   top: 45px;
   text-align: center;
   width: 30px;
   height: 30px;
   line-height: 30px;
   color: #354b5e;
-  border-radius: 15px;
   background-color: white;
-  border: solid thin #354b5e;
   -webkit-transition: color 0.5s, background-color 0.5s;
   -moz-transition: color 0.5s, background-color 0.5s;
-  transition: color 0.5s, background-color 0.5s; }
+  transition: color 0.5s, background-color 0.5s;
+  color: #354b5e; }
   .back-button:hover {
     background-color: #354b5e;
     color: white; }
@@ -318,14 +317,18 @@ p {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
   margin-bottom: 18px; }
 
-#design .back-button {
-  right: 3px; }
+#design {
+  padding-right: 39px; }
+  #design .back-button {
+    right: 0; }
 
-#code .page-title {
-  float: right; }
+#code {
+  padding-left: 39px; }
+  #code .page-title {
+    float: right; }
 
 #code .back-button {
-  left: 3px; }
+  left: 0; }
 
 .page-title {
   display: inline-block;
@@ -434,3 +437,15 @@ p {
   -webkit-animation-duration: 0.5s;
   -moz-animation-duration: 0.5s;
   animation-duration: 0.5s; }
+
+.module-code {
+  padding: 0 100px; }
+
+.tags {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .tags .tag {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
